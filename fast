@@ -1,0 +1,25 @@
+node {
+
+  
+  stage('checkout from SCM') {
+echo "checkout from SCM"
+} 
+  stage('Build') {
+echo "Build"
+} 
+
+stage('Nexus Upload') {
+echo "Upload the Artifacts to Nexus"
+} 
+
+stage('security check') {
+echo "perform the Security Check"
+} 
+ stage('code quality check') {
+echo "Code Quality Analysis"
+} 
+stage('deploy') {
+echo "Deploying the Artifact to Server"
+} 
+   
+}
